@@ -4,7 +4,7 @@
 
 obj-m +=  char_driver.o misc_driver.o
 
-export KROOT=/lib/modules/3.6.2/build
+export KROOT=/lib/modules/$(shell uname -r)/build
 
 allofit:  modules
 modules:
